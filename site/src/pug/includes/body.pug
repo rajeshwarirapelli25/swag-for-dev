@@ -8,7 +8,7 @@ include ./fork.pug
             h1 devSwag
             p 😎 swag opportunities for developers
             p As a developer, nothing piques my interest more than developer swag! I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide!
-            script#_carbonads_js(async='', type='text/javascript', src='//cdn.carbonads.com/carbon.js?serve=CK7DK23W&placement=devswagio')
+            #_carbonads_js
 
         .buttons.flex
 
@@ -61,7 +61,6 @@ include ./fork.pug
             p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://mihir.ch/") Mihir Chaturvedi]
         .item.flex
             p Want to be listed? #[a(href="https://github.com/swapagarwal/swag-for-dev/issues/new") Contact us].
-    #codefund_ad
 
     script(defer).
         window.swag = !{JSON.stringify(swagList)};
